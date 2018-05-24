@@ -3,15 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Melchor Cerezo: Web Developer</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <header>
       <nav id="navbar">
-        <ul>
-          <li class="link"><a href="#home">Home</a></li>
-          <li class="link"><a href="#about">About</a></li>
-          <li class="link"><a href="#projects">Projects</a></li>
+        <ul id="nav-items">
+          <li id="home-link" class="link">
+            <a href="#home">Home</a>
+          </li>
+          <li id="project-link" class="link">
+            <a href="#projects">Projects</a>
+          </li>
+          <li id="about-link" class="link">
+            <a href="#about">About</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -20,11 +27,67 @@
       <h3 class="subtitle">Web Developer</h3>
       <img id="myface" src="images/melchor_cerezo.jpg" alt="my_face">
     </section>
-    <section id="about">
+    <section id="about" class="has-text-centered">
       <h1 id="about_title" class="title">About Me</h1>
-      <section id="about_content">
-        <p></p>
-      </section>
+      <div class="columns">
+          <div id="column-1" class="column">
+            <section id="about-language">
+              <h1>Languages</h1>
+              <p>These are the languages I code in:</p>
+              <ul id="about-language-list" class="about-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>C#</li>
+                <li>C</li>
+              </ul>
+            </section>
+          </div>
+          <div id="column-2" class="column">
+            <section id="about-framework">
+              <h1>Frameworks</h1>
+              <p>Aside from coding in the base languages, I also enjoy using these frameworks:</p>
+              <div id="about-js">
+                <h1>Javascript</h1>
+                <ul id="about-framework-js-list" class="about-list">
+                  <li>JQuery</li>
+                  <li>AngularJS</li>
+                </ul>
+              </div>
+              <div id="about-php">
+                <h1>PHP</h1>
+                <ul id="about-framework-php-list" class="about-list">
+                  <li>Laravel</li>
+                </ul>
+              </div>
+              <div id="about-css">
+                <h1>CSS</h1>
+                <ul id="about-framework-css-list" class="about-list">
+                  <li>Bootstrap</li>
+                  <li>MaterializeCSS</li>
+                </ul>
+              </div>
+              <div id="about-python">
+                <h1>Python</h1>
+                <ul id="about-framework-python-list" class="about-list">
+                  <li>Django</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <div id="column-3" class="column">
+            <section id="about-tools">
+              <h1>Tools</h1>
+              <p>These are the tools I use while coding projects:</p>
+              <ul id="about-tool-list" class="about-list">
+                <li class="about-list-item">Atom</li>
+                <li class="about-list-item">Terminal</li>
+                <li class="about-list-item">Github</li>
+              </ul>
+            </section>
+          </div>
+      </div>
     </section>
     <section id="projects">
       <h1 id="projects_title" class="title">Projects</h1>
