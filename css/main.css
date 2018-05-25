@@ -1,6 +1,5 @@
 img#myface{
-  width: 400px;
-  height: 600px;
+  border-radius: 50%;
 }
 section#home{
   background-color: #dadada;

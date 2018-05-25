@@ -2,32 +2,43 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Melchor Cerezo: Web Developer</title>
-    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <header>
-      <nav id="navbar">
-        <ul id="nav-items">
-          <li id="home-link" class="link">
-            <a href="#home">Home</a>
-          </li>
-          <li id="project-link" class="link">
-            <a href="#projects">Projects</a>
-          </li>
-          <li id="about-link" class="link">
-            <a href="#about">About</a>
-          </li>
-        </ul>
+      <nav class="navbar has-shadow">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <span>Home</span>
+          </a>
+          <div class="navbar-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item">
+              About
+            </a>
+            <a class="navbar-item">
+              Projects
+            </a>
+          </div>
+        </div>
       </nav>
     </header>
-    <section id="home">
+    <section id="home" class="section has-text-centered">
       <h1 class="title">Melchor Cerezo</h1>
       <h3 class="subtitle">Web Developer</h3>
-      <img id="myface" src="images/melchor_cerezo.jpg" alt="my_face">
+      <img id="myface" class="avatar" src="images/melchor_cerezo.jpeg" width="300" alt="my_face">
     </section>
-    <section id="about" class="has-text-centered">
+    <section id="about" class="section has-text-centered">
       <h1 id="about_title" class="title">About Me</h1>
       <div class="columns">
           <div id="column-1" class="column">
@@ -89,7 +100,7 @@
           </div>
       </div>
     </section>
-    <section id="projects">
+    <section id="projects" class="section has-text-centered">
       <h1 id="projects_title" class="title">Projects</h1>
       <section id="projects_content">
 
