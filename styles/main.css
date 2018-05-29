@@ -8489,6 +8489,10 @@ div#column-2 {
   border-left: 1px solid #C5C6C7;
 }
 
+h5.skills-list-subtitle {
+  margin: 0.5rem 0;
+}
+
 /* project styles */
 .project-subtitle {
   color: white;
