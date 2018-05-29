@@ -17,7 +17,7 @@ function registerEvents(e) {
       var thisTo = this.getAttribute('data-anchorId');
       document.getElementById(thisTo).scrollIntoView('smooth');
     }, false);
-
+  }
 
 }
 
