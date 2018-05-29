@@ -8489,6 +8489,12 @@ div#column-2 {
   border-left: 1px solid #C5C6C7;
 }
 
+@media screen and (max-width: 600px) {
+  div#column-2 {
+    border-top: 1px solid #C5C6C7;
+    border-bottom: 1px solid #C5C6C7;
+  }
+}
 h5.skills-list-subtitle {
   margin: 0.5rem 0;
 }
