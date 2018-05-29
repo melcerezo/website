@@ -1,6 +1,8 @@
 // wait for page to load before registering events
 window.addEventListener('load',registerEvents,false);
 
+console.log(window.innerWidth)
+
 // register event listeners
 function registerEvents(e) {
 
@@ -9,13 +11,23 @@ function registerEvents(e) {
     document.querySelector('.navbar-menu').classList.toggle('is-active');
   }, false);
 
-  // register when mouse is over nav links to change background color
+  // register when clicked
+
   var links = document.getElementsByClassName("anc-link");
-  for(var i = 0; i <links.length; i++){
-    links[i].addEventListener('click',function(){
-      var thisTo = this.getAttribute('data-anchorId');
-      scrollTo(document.documentElement, document.getElementById(thisTo).offsetTop, 600)
-    }, false);
+  if(window.innerWidth >= 800){
+    for(var i = 0; i <links.length; i++){
+      links[i].addEventListener('click',function(){
+        var thisTo = this.getAttribute('data-anchorId');
+        scrollTo(document.documentElement, document.getElementById(thisTo).offsetTop, 600)
+      }, false);
+    }
+  }else{
+    for(var i = 0; i <links.length; i++){
+      links[i].addEventListener('click',function(){
+        var thisTo = this.getAttribute('data-anchorId');
+        document.getElementById(thisTo).scrollIntoView('smooth');
+      }, false);
+    }
   }
 }
 
