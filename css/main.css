@@ -8446,25 +8446,15 @@ section#home {
   background-color: #0B0C10;
 }
 
-section#about-timeline {
-  background-color: #1F2833;
-}
-
-section#skills {
-  background-color: #1F2833;
-  overflow: auto;
-}
-
-section#projects {
-  background-color: #1F2833;
-}
-
 /* navigation styles */
-div.anc-link {
+div.navbar-brand:hover a.navbar-item {
   cursor: pointer;
+  background-color: #45A29E;
+  color: white;
 }
 
 div.anc-link:hover {
+  cursor: pointer;
   background-color: #45A29E;
   color: white;
 }

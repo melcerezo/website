@@ -11,6 +11,12 @@ $darker-blue: #1F2833
 $black: #0B0C10
 $gray: #C5C6C7
 
+@mixin nav-style
+  cursor: pointer
+  background-color: $dark-blue
+  color: $white
+
+@mixin section
 
 img#myface
   border-radius: 50%
@@ -23,26 +29,16 @@ section.section
 section#home
   background-color: #0B0C10
 
-section#about-timeline
-  background-color: $darker-blue
-
-section#skills
-  background-color: $darker-blue
-  overflow: auto
-
-section#projects
-  background-color: $darker-blue
 
 
 /* navigation styles */
 
-div.anc-link
-  cursor: pointer
 
+div.navbar-brand:hover a.navbar-item
+  @include nav-style
 
 div.anc-link:hover
-  background-color: $dark-blue
-  color: $white
+  @include nav-style
 
 
 /* home section styles */
