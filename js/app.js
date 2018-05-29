@@ -15,43 +15,8 @@ function registerEvents(e) {
   for(var i = 0; i <links.length; i++){
     links[i].addEventListener('click',function(){
       var thisTo = this.getAttribute('data-anchorId');
-      document.getElementById(thisTo).scrollIntoView('smooth');
+      document.getElementById(thisTo).scrollIntoView({behavior: 'smooth'});
     }, false);
   }
 
 }
-
-// function windowSize(windowWidth, links){
-//   console.log(windowWidth);
-//   if(windowWidth >= 800){
-//     for(var i = 0; i <links.length; i++){
-//       links[i].removeEventListener
-//       links[i].addEventListener('click',function(){
-//         var thisTo = this.getAttribute('data-anchorId');
-//         scrollTo(document.documentElement, document.getElementById(thisTo).offsetTop, 600)
-//       }, false);
-//     }
-//   }else{
-//     for(var i = 0; i <links.length; i++){
-//       links[i].addEventListener('click',function(){
-//         var thisTo = this.getAttribute('data-anchorId');
-//         document.getElementById(thisTo).scrollIntoView('smooth');
-//       }, false);
-//     }
-//   }
-// }
-
-
-// function scrollTo(element, to, duration){
-//   if(duration <= 0){
-//     return;
-//   }
-//   var difference = to - element.scrollTop;
-//   var perTick = difference / duration * 10;
-//
-//   setTimeout(function() {
-//     element.scrollTop = element.scrollTop + perTick;
-//     if(element.scrollTop === to) return;
-//     scrollTo(element, to, duration - 10);
-//   }, 10);
-// }
