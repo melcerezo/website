@@ -8490,6 +8490,12 @@ div#column-2 {
 }
 
 @media screen and (max-width: 600px) {
+  div.box.skills-box div.columns {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
   div#column-2 {
     border-top: 1px solid #C5C6C7;
     border-bottom: 1px solid #C5C6C7;
