@@ -1,7 +1,6 @@
 // wait for page to load before registering events
 window.addEventListener('load',registerEvents,false);
 
-console.log(window.innerWidth)
 
 // register event listeners
 function registerEvents(e) {
@@ -14,21 +13,24 @@ function registerEvents(e) {
   // register when clicked
 
   var links = document.getElementsByClassName("anc-link");
-  if(window.innerWidth >= 800){
-    for(var i = 0; i <links.length; i++){
-      links[i].addEventListener('click',function(){
-        var thisTo = this.getAttribute('data-anchorId');
-        scrollTo(document.documentElement, document.getElementById(thisTo).offsetTop, 600)
-      }, false);
+  window.addEventListener('resize', function() {
+    console.log(window.innerWidth)
+    if(window.innerWidth >= 800){
+      for(var i = 0; i <links.length; i++){
+        links[i].addEventListener('click',function(){
+          var thisTo = this.getAttribute('data-anchorId');
+          scrollTo(document.documentElement, document.getElementById(thisTo).offsetTop, 600)
+        }, false);
+      }
+    }else{
+      for(var i = 0; i <links.length; i++){
+        links[i].addEventListener('click',function(){
+          var thisTo = this.getAttribute('data-anchorId');
+          document.getElementById(thisTo).scrollIntoView('smooth');
+        }, false);
+      }
     }
-  }else{
-    for(var i = 0; i <links.length; i++){
-      links[i].addEventListener('click',function(){
-        var thisTo = this.getAttribute('data-anchorId');
-        document.getElementById(thisTo).scrollIntoView('smooth');
-      }, false);
-    }
-  }
+  }, false);
 }
 
 
