@@ -8437,6 +8437,11 @@ img#myface {
   border-radius: 50%;
 }
 
+section.section {
+  border-bottom: 1px solid #C5C6C7;
+  background-color: #1F2833;
+}
+
 section#home {
   background-color: #0B0C10;
 }
@@ -8460,7 +8465,7 @@ div.anc-link {
 }
 
 div.anc-link:hover {
-  background-color: #66FCF1;
+  background-color: #45A29E;
   color: white;
 }
 
@@ -8496,7 +8501,7 @@ div#column-2 {
 
 /* project styles */
 .project-subtitle {
-  color: #FFFFFF;
+  color: white;
   margin-bottom: 1.5rem;
 }
 
@@ -8557,10 +8562,6 @@ p.social-links a.button {
     font-size: 13px;
   }
 }
-section.section {
-  border-bottom: 1px solid #C5C6C7;
-}
-
 /* Timeline style  */
 .timeline {
   position: relative;
