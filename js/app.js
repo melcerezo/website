@@ -4,7 +4,7 @@ window.addEventListener('load',registerEvents,false);
 // register event listeners
 function registerEvents(e) {
 
-  document.getElementById("burger").addEventListener('click', function() {
+  document.getElementById("burger").addEventListener('mouseover', function() {
     document.querySelector('.navbar-menu').classList.toggle('is-active');
   }, false);
 
