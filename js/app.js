@@ -4,6 +4,10 @@ window.addEventListener('load',registerEvents,false);
 // register event listeners
 function registerEvents(e) {
 
+  document.getElementById("burger").addEventListener('click', function() {
+    document.querySelector('.navbar-menu').classList.toggle('is-active');
+  }, false);
+
   // register when mouse is over nav links to change background color
   var links = document.getElementsByClassName("anc-link");
   for(var i = 0; i <links.length; i++){
